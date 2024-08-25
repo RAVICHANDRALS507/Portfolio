@@ -18,3 +18,21 @@
 /* .footer-link img{
     
 } */
+
+@media(max-width:768px){
+    .footer{
+        margin: 50px 70px;
+    }
+    .footer-links{
+        padding-bottom: 20px;
+    }
+    .footer-bottom-left hr{
+        width: 90vh;
+    }
+    .footer-link{
+        display: flex;
+        width: 90%;
+    }
+
+}
+

@@ -77,3 +77,41 @@
     transform: scale(1.05);
     transition: 0.4s;
 }
+@media(max-width:768px){
+    .projects{
+        align-items: start;
+        gap: 70px;
+        margin: 20px 70px;
+    }
+    .projects-title h1{
+        padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 10vh;
+    width: 100vh;
+    }
+    .projects-title img{
+        width: 150px;
+        right: 55vh;
+    }
+    .projects-format{
+        gap: 20px;
+        padding: 32px;
+        width: 90vh;
+    }
+    .projects-format p{
+        margin-left: 40px;
+        
+    }
+    /* .projects-format h2{
+        font-size: 28px;
+    }
+    .projects-format p{
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 300px;
+    } */
+     .projects-container{
+        grid-template-columns: none;
+     }
+}

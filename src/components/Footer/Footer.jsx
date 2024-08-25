@@ -21,7 +21,7 @@ const Footer = () => {
               <p>+91 7892968904</p>
             </div>
             
-            <div className="footer-link">
+            <div className="footer-link" cl>
               <img src={location_icon} alt="" />
               <p>Bangalore Karnataka</p>
             </div>

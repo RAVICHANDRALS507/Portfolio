@@ -23,11 +23,13 @@ const Contact = () => {
         const data = await response.json();
     
         if (data.success) {
-          setResult("Form Submitted Successfully");
+          // setResult("Form Submitted Successfully");
+          alert(res.message);
           event.target.reset();
         } else {
-          console.log("Error", data);
-          setResult(data.message);
+          // console.log("Error", data);
+          // setResult(data.message);
+          alert(res.message);
         }
       };
 
