@@ -20,7 +20,7 @@ const Footer = () => {
               <img src={call_icon} alt="" />
               <p>+91 7892968904</p>
             </div>
-            
+
             <div className="footer-link" cl>
               <img src={location_icon} alt="" />
               <p>Bangalore Karnataka</p>
