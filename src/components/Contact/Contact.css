@@ -121,7 +121,7 @@
     transition: 0.3s;
 }
 
-@media(max-width:768px){
+@media(max-width:1212px){
     .contact{
         gap: 50px;
         margin: 50px 70px;
@@ -129,14 +129,14 @@
     }
     .contact-title h1{
         margin-top: 30px;
-        width: 150vh;
+        width: 100vh;
         padding: 0;
         font-size: 70px;
         font-weight: 600;
     }
     .contact-title img{
         width: 180px;
-        margin-right: 90vh;
+        margin-right: 40vh;
     }
     .contact-section{
         flex-direction: column;
