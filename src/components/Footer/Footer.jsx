@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-bottom-left">
           <hr />
-          <div className="footer-links linke">
+          <div className="footer-links linker">
             <div className="footer-link">
               <img src={mail_icon} alt="" />
               <p>cravi7715@gmil.com</p>
