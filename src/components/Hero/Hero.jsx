@@ -7,7 +7,6 @@ const Hero = () => {
   return (
     <div id="home" className="hero">
       <img src={Picture} alt="" />
-      {/* <img src="" alt="" /> */}
       <h1>
         <span>
           I'm <br />

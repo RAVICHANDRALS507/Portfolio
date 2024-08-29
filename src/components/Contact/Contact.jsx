@@ -7,7 +7,7 @@ import call_icon from '../../assets/call_icon.svg'
 
 
 const Contact = () => {
-
+  //email
     const onSubmit = async (event) => {
         event.preventDefault();
         setResult("Sending....");
@@ -23,7 +23,7 @@ const Contact = () => {
         const data = await response.json();
     
         if (data.success) {
-          // setResult("Form Submitted Successfully");
+          // setResult("Form Submitted Successfullly");
           alert(res.message);
           event.target.reset();
         } else {
