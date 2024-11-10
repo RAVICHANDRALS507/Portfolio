@@ -25,7 +25,9 @@ const Hero = () => {
         <div className="hero-resume">My Resume</div>
         <div className="image"></div>
       </div>
+      {/* <img src="image.png" alt="" /> */}
     </div>
+    
   );
 };
 

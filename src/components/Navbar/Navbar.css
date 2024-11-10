@@ -1,16 +1,33 @@
-.navbar{
+/* .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 20px 170px;
+} */
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Center the container */
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 15vh;
+    width: 85%; /* Full width of the viewport */
+    background-color: #161513;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vh;
+    border-radius: 5vh;
+    box-sizing: border-box;
 }
+
 
 .nav-menu{
     display:flex;
     align-items: center;
     list-style: none;
     gap: 60px;
-    font-size: 20px;
+    font-size: 3.5vh;
 }
 
 .nav-connect{
@@ -42,6 +59,10 @@
     color: white;
 }
 
+.nav-mob-open{
+    display: none;
+}
+
 .nav-mob-close{
     display: none;
 }
@@ -55,7 +76,7 @@
     .nav-mob-open{
         display: block;
         position: fixed;
-        /* right: 30px; */
+        right: 30px;
         margin-left: 100vh;
     }
     .nav-mob-close{
