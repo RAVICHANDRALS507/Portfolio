@@ -12,7 +12,8 @@ const About = () => {
       </div>
       <div className="about-sections">
         <div className="about-left">
-          <img src={profile_img} alt="" />
+          {/* <img src={profile_img} alt="" /> */}
+          <img src="https://static.vecteezy.com/system/resources/previews/034/825/262/non_2x/ai-generated-portrait-of-student-background-free-png.png" alt="" />
         </div>
         <div className="about-right">
           <div className="about-para">
@@ -29,6 +30,7 @@ const About = () => {
             </p>
           </div>
           <div className="about-skills">
+            
             <div className="about-skill">
               <p>HTML & CSS</p>
               <p>SQL</p>

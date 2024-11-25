@@ -33,13 +33,39 @@ const Contact = () => {
         }
       };
 
-
   return (
     <div id='contact' className='contact'>
       <div className="contact-title">
         <h1>Get in Touch</h1>
         <img src={theme_pattern} alt="" />
       </div>
+      <div className="marquee-container">
+  {/* First Row */}
+  <div className="marquee-row marquee-row-right">
+    <a href="https://github.com/RAVICHANDRALS507"><button>Github</button></a>
+    <a href="https://www.linkedin.com/in/ravichandrals/"><button>LinkedIn</button></a>
+    <a href=""><button>Discord</button></a>
+    <a href="https://github.com/RAVICHANDRALS507"><button>Github</button></a>
+    <a href="https://www.linkedin.com/in/ravichandrals/"><button>LinkedIn</button></a>
+    <a href=""><button>Discord</button></a>
+    <a href="https://github.com/RAVICHANDRALS507"><button>Github</button></a>
+    <a href="https://www.linkedin.com/in/ravichandrals/"><button>LinkedIn</button></a>
+    <a href=""><button>Discord</button></a>
+  </div>
+  {/* Second Row */}
+  <div className="marquee-row marquee-row-left">
+    <a href="https://www.threads.net/@__.ravivinay.__"><button>Threads</button></a>
+    <a href="https://www.instagram.com/__.ravivinay.__/"><button>Instagram</button></a>
+    <a href="https://www.snapchat.com/add/ravivinay726?share_id=HNEydiunS9Y&locale=en-US"><button>Snapchat</button></a>
+    <a href="https://www.threads.net/@__.ravivinay.__"><button>Threads</button></a>
+    <a href="https://www.instagram.com/__.ravivinay.__/"><button>Instagram</button></a>
+    <a href="https://www.snapchat.com/add/ravivinay726?share_id=HNEydiunS9Y&locale=en-US"><button>Snapchat</button></a>
+    <a href="https://www.threads.net/@__.ravivinay.__"><button>Threads</button></a>
+    <a href="https://www.instagram.com/__.ravivinay.__/"><button>Instagram</button></a>
+    <a href="https://www.snapchat.com/add/ravivinay726?share_id=HNEydiunS9Y&locale=en-US"><button>Snapchat</button></a>
+  </div>
+</div>
+
       <div className="contact-section">
         <div className="contact-left">
             <h1>Let's talk</h1>

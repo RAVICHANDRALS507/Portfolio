@@ -11,9 +11,10 @@
     position: fixed;
     top: 0;
     left: 0;
-    margin-left: 15vh;
-    width: 85%; /* Full width of the viewport */
-    background-color: #161513;
+    /* margin-left: 15vh; */
+    /* width: 85%; Full width of the viewport */
+    width: 100%; /* Full width of the viewport */
+    /* background-color: #374351; */
     padding-top: 2vh;
     padding-bottom: 2vh;
     padding-left: 2vh;
@@ -35,6 +36,7 @@
     border-radius: 50px;
     background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
     font-size: 22px;
+    margin-right: 5vh;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -66,9 +68,10 @@
 .nav-mob-close{
     display: none;
 }
-@media(max-width:1212px){
+@media(max-width:1330px){
     .navbar{
-        margin: 20px 50px;
+        margin: 0px 0px;
+        height: 15vh;
     }
     .nav-connect{
         display: none;
@@ -76,8 +79,9 @@
     .nav-mob-open{
         display: block;
         position: fixed;
-        right: 30px;
-        margin-left: 100vh;
+        right: 5vh;
+        height: 7vh;
+        margin-top: 1vh;
     }
     .nav-mob-close{
         display: block;
