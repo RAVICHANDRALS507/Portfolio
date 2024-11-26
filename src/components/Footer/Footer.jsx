@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="footer-bottom-left">
       <hr />
       <div className="footer-links">
-        <div className="footer-link">
+        {/* <div className="footer-link">
           <img src={mail_icon} alt="" />
           <p>cravi7715@gmil.com</p>
         </div>
@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="footer-link">
           <img src={location_icon} alt="" />
           <p>Bangalore Karnataka</p>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>
