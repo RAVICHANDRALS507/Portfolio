@@ -10,15 +10,26 @@
     gap: 35px;
 } */
 
-.hero img{
-    /* margin-top: 0px; */
-    border-radius: 100px;
-    /* margin-left: 150vh; */
-    float: right;
+/* .hero img{ */
+    /* margin-top: 0px; default*/
+    /* border-radius: 100px; */
+    /* margin-left: 150vh; default*/
+    /* float: right;
     background: linear-gradient(270deg,#DF8908 50.41%, #B415FF 90.25%);
       padding: 10px;
       width: 19%;
       margin: 0vh 25vh;  
+} */
+
+
+/* For Professional image */
+.hero img{
+    border-radius: 100px;
+    float: right;
+    padding: 10px;
+    width: 29%;
+    margin: 0vh 15vh; 
+    height: 45vh; 
 }
 
 .hero h1{
