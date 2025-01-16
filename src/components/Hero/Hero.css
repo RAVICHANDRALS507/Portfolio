@@ -10,15 +10,26 @@
     gap: 35px;
 } */
 
+/* .hero img{ */
+    /* margin-top: 0px; default*/
+    /* border-radius: 100px; */
+    /* margin-left: 150vh; default*/
+    /* float: right;
+    background: linear-gradient(270deg,#DF8908 50.41%, #B415FF 90.25%);
+      padding: 10px;
+      width: 19%;
+      margin: 0vh 25vh;  
+} */
+
 .hero img{
     /* margin-top: 0px; */
     border-radius: 100px;
     /* margin-left: 150vh; */
     float: right;
-    background: linear-gradient(270deg,#DF8908 50.41%, #B415FF 90.25%);
+    /* background: linear-gradient(270deg,#DF8908 50.41%, #B415FF 90.25%); */
       padding: 10px;
-      width: 19%;
-      margin: 0vh 25vh;  
+      width: 30%;
+      margin: 0vh 15vh;  
 }
 
 .hero h1{

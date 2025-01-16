@@ -45,11 +45,25 @@ const Navbar = () => {
           </AnchorLink>
           {menu === "project" ? <img src={underline} alt="" /> : <></>}
         </li>
+
         <li>
-          <AnchorLink className="anchor-link" offset={50} href="#contact">
-            <p onClick={() => setMenu("contact")}>Contact</p>
+          <AnchorLink className="anchor-link" offset={50} href="#project">
+            <p onClick={() => setMenu("project")}>Projects</p>
           </AnchorLink>
-          {menu === "contact" ? <img src={underline} alt="" /> : <></>}
+          {menu === "project" ? <img src={underline} alt="" /> : <></>}
+        </li>
+
+        <li>
+          <AnchorLink className="anchor-link" offset={50} href="#education">
+            <p onClick={() => setMenu("education")}>Education</p>
+          </AnchorLink>
+          {menu === "education" ? <img src={underline} alt="" /> : <></>}
+        </li>
+        <li>
+          <AnchorLink className="anchor-link" offset={50} href="#certificate">
+            <p onClick={() => setMenu("certificate")}>Certificate</p>
+          </AnchorLink>
+          {menu === "certificate" ? <img src={underline} alt="" /> : <></>}
         </li>
       </ul>
       <div className="nav-connect">
