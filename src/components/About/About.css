@@ -7,6 +7,10 @@
     margin: 80px 170px;
 }
 
+.about-img{
+    width: 50vh;
+    margin-top: 80px;
+}
 .about-title{
     position: relative;
 }
