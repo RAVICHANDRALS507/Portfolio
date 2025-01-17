@@ -97,7 +97,7 @@ main.row{
 	font-size: 3vh;
 }
 
-@media(max-width:1212px){
+@media(max-width:1150px){
     .education{
         gap: 80px;
         margin: 50px 70px;

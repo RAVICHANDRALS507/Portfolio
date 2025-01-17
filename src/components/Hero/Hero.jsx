@@ -23,7 +23,9 @@ const Hero = () => {
             Connect With Me
           </AnchorLink>
         </div>
-        <div className="hero-resume">My Resume</div>
+        <div className="hero-resume">
+        <a className="anchor-link" href="https://drive.google.com/file/d/1Zo8eNPjZH_n2OUcfeO2AT3il4aliw_3t/view?usp=drivesdk" target="_blank">My Resume</a>
+        </div>
         <div className="image"></div>
       </div>
       {/* <img src="image.png" alt="" /> */}

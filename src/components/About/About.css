@@ -92,18 +92,19 @@
     transform: 0.3s;
 }
 
-@media(max-width:1212px){
+@media(max-width:1150px){
     .about{
         gap: 80px;
-        margin: 50px 70px;
+        margin-top: 0px;
+        margin-left: 30px;
         align-items: start;
     }
     .about-title h1{
-        font-size: 50px;
+        font-size: 30px;
         padding: 0;
     }
     .about-title img{
-        width: 130px;
+        width: 100px;
         right: -20px;
     }
     .about-sections{
@@ -113,15 +114,16 @@
     .about-left{
         display: none;
     }
-    .about-para{
-        /* font-size: 18px;
-        line-height: 32px;
-        width: 100%; */
-        width: 100vh;
-        margin: 0 30px;
-        gap: 50px;
-        /* align-items: center; */
-    }
+    .about-para {
+        font-size: 20px;
+        line-height: 1.6;        /* Adjust line height for better readability */
+        width: 80%;             /* Limit the paragraph width for a cleaner look */
+        margin: 0 auto;         /* Center the paragraph horizontally */
+        text-align: justify;    /* Justify the text */
+        padding: 10px;          /* Add padding for spacing */
+        box-sizing: border-box; /* Include padding in the width calculation */
+      }
+      
     .about-skill{
         gap: 20px;
         margin: 10vh 0 0 20vh;

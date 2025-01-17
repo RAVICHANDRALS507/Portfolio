@@ -70,25 +70,31 @@
 .nav-mob-close{
     display: none;
 }
-@media(max-width:1212px){
-    .navbar{
-        margin: 20px 50px;
+@media(max-width:1150px){
+    .navbar {
+        background-color: #B923E1;
+        margin-left: 0px;
     }
-    .nav-connect{
+    
+    .nav-connect {
         display: none;
     }
-    .nav-mob-open{
+    
+    .nav-mob-open {
         display: block;
         position: fixed;
-        right: 30px;
-        margin-left: 100vh;
+        left: 50%;               /* Position the icon in the center */
+        top: 20px;               /* Keep the icon fixed at the top */
+        transform: translateX(-50%); /* Shift it by 50% of its width to truly center */
+        margin-left: 0;          /* Remove unnecessary margin-left */
     }
+    
     .nav-mob-close{
         display: block;
         position: relative;
         top: 30px;
         left: 290px;
-        width: 30px;
+        width: 20px;
     }
     .nav-menu{
         position: fixed;
@@ -108,5 +114,9 @@
         padding-left: 100px;
         flex-direction: row;
         gap: 20px;
+    }
+    .logo{
+        margin:-2vh;
+        width: 50px;
     }
 }

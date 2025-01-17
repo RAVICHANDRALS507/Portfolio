@@ -122,7 +122,79 @@
     transition: 0.3s;
 }
 
-@media(max-width:1212px){
+/* Marquee container */
+.marquee-container {
+    width: 50%; /* Set width to 50% */
+    margin: 20px auto;
+    overflow: hidden; /* Hides content outside the container */
+    display: flex;
+    flex-direction: column; /* Stack the rows vertically */
+    gap: 20px; /* Space between the rows */
+    padding: 10px;
+    border-radius: 10vh;
+  }
+  
+  .marquee-row {
+    display: flex;
+    gap: 30px; /* Space between buttons */
+    white-space: nowrap; /* Prevent wrapping of buttons */
+    width: max-content; /* Adjust width based on the content */
+    transition: transform 0.5s ease;
+  }
+  
+  /* Animation for scrolling the first row from right to left */
+  .marquee-row-right {
+    animation: scrollRightToLeft 30s linear infinite;
+  }
+  
+  /* Animation for scrolling the second row from left to right */
+  .marquee-row-left {
+    animation: scrollLeftToRight 30s linear infinite;
+  }
+
+/* Keyframes for first row - scrolling from right to left */
+@keyframes scrollRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Keyframes for second row - scrolling from left to right */
+  @keyframes scrollLeftToRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Styling for the buttons */
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-image: linear-gradient(45deg, #2980b9, #8e44ad); /* Darker gradient on hover */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+    /* border-radius: 5vh; */
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+
+
+@media(max-width:1150px){
     .contact{
         gap: 50px;
         margin: 50px 70px;
@@ -169,5 +241,18 @@
     .contact-submit{
         font-size: 20px;
         padding: 15px 40px;
+    }
+    .marquee-container {
+        width: 70vh;
+        margin: 10vh 15vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        padding: 10px;  
+        /* border-radius: 7vh;     */
+    }
+    button{
+        font-size: 6vh;
     }
 }

@@ -78,41 +78,47 @@
     transition: 0.4s;
 }
 /* @media(max-width:768px){ */
-@media(max-width:1212px){
-    .projects{
-        align-items: start;
+@media(max-width:1150px) {
+    .projects {
+        display: flex;               /* Use flexbox to center the content */
+        flex-direction: column;      /* Stack items vertically */
+        align-items: center;         /* Horizontally center items */
         gap: 70px;
-        margin: 20px 70px;
+        margin: 20px auto;           /* Center the container */
+        width: 100%;                 /* Ensure the width is 100% */
+        padding: 0 20px;             /* Add some padding */
     }
-    .projects-title h1{
-        padding: 0px 30px;
-    font-size: 60px;
-    font-weight: 600;
-    margin-top: 10vh;
-    width: 100vh;
+    
+    .projects-title h1 {
+        font-size: 30px;
+        padding: 0;
     }
-    .projects-title img{
-        width: 150px;
-        right: 55vh;
+    
+    .projects-title img {
+        width: 100px;
+        right: -20px;
     }
-    .projects-format{
+    
+    .projects-format {
+        display: flex;
+        flex-direction: column;      /* Stack the project items vertically */
+        align-items: center;         /* Center the items */
         gap: 20px;
         padding: 32px;
-        width: 90vh;
+        width: 90%;                  /* Limit the width for better appearance */
     }
-    .projects-format p{
-        margin-left: 40px;
-        
-    }
-    /* .projects-format h2{
-        font-size: 28px;
-    }
-    .projects-format p{
+    
+    .projects-format p {
+        margin-left: 0;              /* Remove margin for better centering */
+        text-align: center;          /* Center the paragraph text */
         font-size: 18px;
         line-height: 32px;
-        max-width: 300px;
-    } */
-     .projects-container{
-        grid-template-columns: none;
-     }
+    }
+
+    .projects-container {
+        display: grid;               /* Use grid to display the project items */
+        grid-template-columns: 1fr;   /* Stack items in one column */
+        gap: 20px;                   /* Space between items */
+        width: 100%;                 /* Ensure full width */
+    }
 }

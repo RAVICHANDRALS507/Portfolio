@@ -174,7 +174,7 @@
     right: -15px;
 }
 
-@media(max-width:1212px){
+@media(max-width:1150px){
     .certificate{
         gap: 80px;
         margin: 50px 70px;
