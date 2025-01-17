@@ -11,9 +11,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    margin-left: 15vh;
-    width: 85%; /* Full width of the viewport */
-    background-color: #161513;
+    /* margin-left: 15vh; */
+    width: 100%; /* Full width of the viewport */
+    background-color: #161212;
     padding-top: 2vh;
     padding-bottom: 2vh;
     padding-left: 2vh;
@@ -21,6 +21,9 @@
     box-sizing: border-box;
 }
 
+.logo{
+    margin-left: 50px;
+}
 
 .nav-menu{
     display:flex;
@@ -35,6 +38,7 @@
     border-radius: 50px;
     background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
     font-size: 22px;
+    margin-right: 50px;
     cursor: pointer;
     transition: 0.5s;
 }

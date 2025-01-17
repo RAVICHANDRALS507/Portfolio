@@ -8,14 +8,16 @@ const Certification = () => {
             <h1>My Achievements</h1>
             <img src={theme_pattern} alt="" />
             <div className="timeline">
+                
+
                 <div className="container left-container">
-                    <img src="https://cdn.dribbble.com/users/2410782/screenshots/8192199/media/a152b89721e1b17597aff54afbdef152.jpg?compress=1&resize=1600x1200&vertical=top" alt="" />
+                <img src="https://static.vecteezy.com/system/resources/previews/018/779/928/original/3d-illustration-of-amazon-logo-free-png.png" alt="" />
                     <div className="text-box">
-                        <h2>HacktoberFest contributor</h2>
-                        <small>2024</small>
-                        <p>Participated in HacktoberFest 2024 Open Source contribution which was conducted in the month of October 1-30, i contribute to open source and created 4 Merge Request succesfully and completed the target.</p>
-                        <a className="view-button" href="https://www.holopin.io/@ravichandrals507#badges" target="_blank" rel="noopener noreferrer">View</a>
+                        <h2>Research Paper on Optimized Processing to detect Breast Cancer</h2>
+                        <small>2025</small>
+                        <p>Presented at the 5th International Conference on Smart Data Intelligence (ICSMDI-2025) organised by Kongunadu College of Engineering and Technology, Trichy, Tamil Nadu, India on January 9-10, 2025.</p>
                         <span className="left-container-arrow"></span>
+                        <a className="view-button" href="https://drive.google.com/file/d/15H89jz716wAxXgwTNKiGK4NrKY3P0c16/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View</a>
                     </div>
                 </div>
 
@@ -31,13 +33,13 @@ const Certification = () => {
                 </div>
 
                 <div className="container left-container">
-                <img src="https://static.vecteezy.com/system/resources/previews/018/779/928/original/3d-illustration-of-amazon-logo-free-png.png" alt="" />
+                    <img src="https://cdn.dribbble.com/users/2410782/screenshots/8192199/media/a152b89721e1b17597aff54afbdef152.jpg?compress=1&resize=1600x1200&vertical=top" alt="" />
                     <div className="text-box">
-                        <h2>Research Paper present</h2>
+                        <h2>HacktoberFest contributor</h2>
                         <small>2024</small>
-                        <p>A Model to detect Breast cancer</p>
+                        <p>Participated in HacktoberFest 2024 Open Source contribution which was conducted in the month of October 1-30, i contribute to open source and created 4 Merge Request succesfully and completed the target.</p>
+                        <a className="view-button" href="https://www.holopin.io/@ravichandrals507#badges" target="_blank" rel="noopener noreferrer">View</a>
                         <span className="left-container-arrow"></span>
-                        <a className="view-button" href="#" target="_blank" rel="noopener noreferrer">View</a>
                     </div>
                 </div>
 
