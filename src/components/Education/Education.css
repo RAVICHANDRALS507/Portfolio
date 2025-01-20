@@ -107,17 +107,51 @@ main.row{
         font-size: 8vh;
         padding: 0;
     }
-    /* .education-title h1{
-        margin-top: 10vh;
-        width: 82vh;
-        padding: 0;
-        font-size: 8vh;
-        font-weight: 600;
-    } */
-    .education-title img{
-        width: 180px;
-        margin-right: 40vh;
+    .education-title h1{
+        padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+    /* margin-top: 10vh; */
+
+		
     }
+    .education-title img{
+        width: 100px;
+        right: -20px;
+    }
+	.box h4{
+		position: relative;
+		color: #11a372;
+		font-size: 3vh;
+	}
+	.box h3{
+		font-size: 2vh;
+		padding: 10px 0px 6px;
+		font-family: helvetica;
+		color: #444;
+	}
+	.box p{
+		line-height: 1.2;
+		color: #666;
+		font-size: 2vh;
+	}
+	.col .contents .box{
+		/* position: relative;
+		padding: 20px;
+		border: 1px solid #eaeaea;
+		background-color: transparent;
+		cursor: pointer;
+		transition: all 0.4s;
+		margin-bottom: 20px; */
+		height: 15vh;
+		width: 30vh;
+		/* border-radius: 20px; */
+	}
+	.col .contents {
+		/* padding: 0px 30px; */
+		border-left: 2px solid #bababa;
+		width: 100vh;
+	}
     main.row{
 		grid-template-columns: 1fr;
 	}

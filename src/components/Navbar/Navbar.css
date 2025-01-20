@@ -72,8 +72,9 @@
 }
 @media(max-width:1150px){
     .navbar {
-        background-color: #B923E1;
-        margin-left: 0px;
+        /* background-color: #B923E1; */
+        margin: 0 auto; /* Centers the navbar horizontally */
+        text-align: center;
     }
     
     .nav-connect {
@@ -81,12 +82,11 @@
     }
     
     .nav-mob-open {
-        display: block;
-        position: fixed;
-        left: 50%;               /* Position the icon in the center */
-        top: 20px;               /* Keep the icon fixed at the top */
-        transform: translateX(-50%); /* Shift it by 50% of its width to truly center */
-        margin-left: 0;          /* Remove unnecessary margin-left */
+        display: block; /* Make it visible */
+        position: absolute; /* Position it relative to its closest positioned ancestor */
+        top: 0; /* Adjust as needed */
+        right: 0; /* Align it to the right corner */
+        margin: 10px;
     }
     
     .nav-mob-close{
@@ -116,7 +116,7 @@
         gap: 20px;
     }
     .logo{
-        margin:-2vh;
-        width: 50px;
+        margin-left:2px;
+        width: 70px;
     }
 }

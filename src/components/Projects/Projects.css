@@ -49,7 +49,7 @@
 }
 
 .projects-format h2{
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 800;
     background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%);
     background-clip: text;
@@ -68,7 +68,7 @@
     display: flex;
     gap: 20px;
     align-items:center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .projects-format:hover{
@@ -102,15 +102,15 @@
     .projects-format {
         display: flex;
         flex-direction: column;      /* Stack the project items vertically */
-        align-items: center;         /* Center the items */
-        gap: 20px;
+        /* align-items: center;          */
+        /* gap: 20px; */
         padding: 32px;
-        width: 90%;                  /* Limit the width for better appearance */
+        /* width: 90%;                   */
     }
     
     .projects-format p {
         margin-left: 0;              /* Remove margin for better centering */
-        text-align: center;          /* Center the paragraph text */
+        /* text-align: center;*/
         font-size: 18px;
         line-height: 32px;
     }
@@ -119,6 +119,6 @@
         display: grid;               /* Use grid to display the project items */
         grid-template-columns: 1fr;   /* Stack items in one column */
         gap: 20px;                   /* Space between items */
-        width: 100%;                 /* Ensure full width */
+        width: 80%;                 /* Ensure full width */
     }
 }
