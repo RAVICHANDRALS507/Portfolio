@@ -13,7 +13,16 @@ This repository is still under development and I will continue to add more featu
 
 
 ## Screenshots
-![{C3032DAE-1CC5-4843-8741-3BD4E2FACD70}](https://github.com/user-attachments/assets/7cd270df-71cc-4943-ad7b-dfbd09d606b2)
+![{0C4D7EE3-EF26-49A3-8773-E1B227A18E16}](https://github.com/user-attachments/assets/416b00b0-91bd-4790-9185-ba7cad4167fb)
+
+
+![{C15044EE-BDA6-4663-AC4F-9B67A00374B5}](https://github.com/user-attachments/assets/2869d760-2cd5-4f4a-bb95-311dc24b8fce)
+
+
+![{DB71F2EE-6455-4716-97AB-32E6DBD662E3}](https://github.com/user-attachments/assets/316a7cbb-3a16-4322-bd0e-ef108f823d8d)
+
+
+
 
 
 
