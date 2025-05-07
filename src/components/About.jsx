@@ -4,18 +4,25 @@ import profile_img from "../assets/profile_img.svg";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-[#18181b] text-white">
+    <section id="about" className="py-5 bg-[#18181b] text-white">
       <div className="max-w-5xl mx-auto px-4">
-        {/* Section Title */}
-        <div className="flex items-center gap-4 mb-10">
-          <h1 className="text-3xl font-bold">About Me</h1>
-          <img src={theme_pattern} alt="Theme Pattern" className="h-8" />
+        {/* Section Title with theme pattern behind */}
+        <div className="relative flex justify-center md:justify-start mb-10 items-center">
+          <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:left-0 md:top-1/2 md:-translate-x-0 md:-translate-y-1/2 z-0 pointer-events-none">
+            <img
+              src={theme_pattern}
+              alt="Theme Pattern"
+              className="w-28 h-8 md:w-32 md:h-10 opacity-40"
+              style={{ objectFit: "contain" }}
+            />
+          </span>
+          <h1 className="text-3xl font-bold relative z-10 px-4 bg-transparent">About Me</h1>
         </div>
 
         {/* Main content - Profile Image and Text */}
         <div className="flex flex-col md:flex-row gap-10 items-center md:items-start">
           {/* Profile Image */}
-          <div className="flex-shrink-0 w-48 h-48">
+          <div className="flex-shrink-0 w-40 h-40 md:w-44 md:h-44">
             <img
               src={profile_img}
               alt="Profile"
@@ -42,28 +49,43 @@ const About = () => {
             {/* Skills Section */}
             <div className="flex flex-wrap gap-4 mb-6 justify-center md:justify-start">
               <span className="bg-yellow-400/20 text-yellow-300 px-4 py-2 rounded-full font-semibold">
-                HTML & CSS
+                Core Java
               </span>
               <span className="bg-purple-400/20 text-purple-300 px-4 py-2 rounded-full font-semibold">
-                SQL
+                React.js Basics
               </span>
               <span className="bg-blue-400/20 text-blue-300 px-4 py-2 rounded-full font-semibold">
-                React Js
+                Node.js Basics
               </span>
               <span className="bg-pink-400/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
-                DSA
+                MySQL
+              </span>
+              <span className="bg-pink-400/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
+                Data Structures & Algorithm
+              </span>
+              <span className="bg-pink-400/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
+                HTML & CSS
+              </span>
+              <span className="bg-pink-400/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
+                Computer Network
+              </span>
+              <span className="bg-pink-400/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
+                Operating System
+              </span>
+              <span className="bg-pink-400/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
+                OOPS
               </span>
             </div>
 
-            {/* Stats Section */}
-            <div className="flex gap-10 justify-center md:justify-start">
-              <div>
-                <h2 className="text-2xl font-bold">4+</h2>
-                <p className="text-gray-400">Projects Completed</p>
+            {/* Stats Section - Larger text, right-aligned on desktop */}
+            <div className="flex gap-10 justify-center md:justify-end">
+              <div className="text-center md:text-right">
+                <h2 className="text-3xl md:text-4xl font-bold">4+</h2>
+                <p className="text-gray-400 text-base md:text-lg">Projects Completed</p>
               </div>
-              <div>
-                <h2 className="text-2xl font-bold">1.5+</h2>
-                <p className="text-gray-400">Years Experience</p>
+              <div className="text-center md:text-right">
+                <h2 className="text-3xl md:text-4xl font-bold">1.5+</h2>
+                <p className="text-gray-400 text-base md:text-lg">Years Experience</p>
               </div>
             </div>
           </div>
