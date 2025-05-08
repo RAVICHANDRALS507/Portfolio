@@ -7,8 +7,8 @@ const About = () => {
     <section id="about" className="py-5 bg-[#18181b] text-white">
       <div className="max-w-5xl mx-auto px-4">
         {/* Section Title with theme pattern behind */}
-        <div className="relative flex justify-center md:justify-start mb-10 items-center">
-          <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:left-0 md:top-1/2 md:-translate-x-0 md:-translate-y-1/2 z-0 pointer-events-none">
+        <div className="relative flex justify-start mb-10 items-center pl-1">
+          <span className="absolute left-1 top-1/3 -translate-y-1/3 z-0 pointer-events-none">
             <img
               src={theme_pattern}
               alt="Theme Pattern"
@@ -21,8 +21,8 @@ const About = () => {
 
         {/* Main content - Profile Image and Text */}
         <div className="flex flex-col md:flex-row gap-10 items-center md:items-start">
-          {/* Profile Image */}
-          <div className="flex-shrink-0 w-40 h-40 md:w-44 md:h-44">
+          {/* Profile Image - Hidden on mobile, visible on desktop */}
+          <div className="hidden md:block flex-shrink-0 w-44 h-44">
             <img
               src={profile_img}
               alt="Profile"
