@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 py-20 bg-gradient-to-b from-[#161513] to-[#232526] text-center md:text-left gap-0 md:gap-12"
+      className="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 py-12 md:py-20 bg-gradient-to-b from-[#161513] to-[#232526] text-center md:text-left gap-0 md:gap-12"
     >
       {/* Right Section - Image */}
             {/* Right Section - Image */}

@@ -4,15 +4,15 @@ import profile_img from "../assets/profile_img.svg";
 
 const About = () => {
   return (
-    <section id="about" className="py-5 bg-[#18181b] text-white">
+    <section id="about" className="py-12 bg-[#18181b] text-white">
       <div className="max-w-5xl mx-auto px-4">
         {/* Section Title with theme pattern behind */}
         <div className="relative flex justify-start mb-10 items-center pl-1">
-          <span className="absolute left-1 top-1/3 -translate-y-1/3 z-0 pointer-events-none">
+          <span className="absolute left-12 top-1/3 -translate-y-1/3 z-0 pointer-events-none">
             <img
               src={theme_pattern}
               alt="Theme Pattern"
-              className="w-28 h-8 md:w-32 md:h-10 opacity-40"
+              className="w-36 h-11 md:w-44 md:h-16 opacity-40"
               style={{ objectFit: "contain" }}
             />
           </span>
@@ -47,7 +47,7 @@ const About = () => {
             </div>
 
             {/* Skills Section */}
-            <div className="flex flex-wrap gap-4 mb-6 justify-center md:justify-start">
+            <div className="flex flex-wrap gap-4 mb-6 mt-8 md:mt-0 justify-center md:justify-start">
               <span className="bg-yellow-400/20 text-yellow-300 px-4 py-2 rounded-full font-semibold">
                 Core Java
               </span>
@@ -78,7 +78,7 @@ const About = () => {
             </div>
 
             {/* Stats Section - Larger text, right-aligned on desktop */}
-            <div className="flex gap-10 justify-center md:justify-end">
+            <div className="flex gap-10 justify-center md:justify-end mt-8 md:mt-0">
               <div className="text-center md:text-right">
                 <h2 className="text-3xl md:text-4xl font-bold">4+</h2>
                 <p className="text-gray-400 text-base md:text-lg">Projects Completed</p>

@@ -31,14 +31,21 @@ const Contact = () => {
   return (
     <section id='contact' className='py-20 bg-[#18181b] text-white'>
       <div className="max-w-5xl mx-auto px-4">
-        <div className="flex items-center gap-4 mb-10">
-          <h1 className="text-3xl font-bold">Get in Touch</h1>
-          <img src={theme_pattern} alt="" className="h-8" />
+        <div className="relative flex justify-start mb-10 items-center pl-1">
+          <span className="absolute left-12 top-1/3 -translate-y-1/3 z-0 pointer-events-none">
+            <img
+              src={theme_pattern}
+              alt="Theme Pattern"
+              className="w-36 h-11 md:w-44 md:h-16 opacity-40"
+              style={{ objectFit: "contain" }}
+            />
+          </span>
+          <h1 className="text-3xl font-bold relative z-10 px-4 bg-transparent">Get in Touch</h1>
         </div>
         <div className="flex flex-col md:flex-row gap-10">
           <div className="flex-1">
             <h2 className="text-2xl font-bold mb-4">Let's talk</h2>
-            <p className="mb-6 text-gray-300">
+            <p className="mb-6 text-gray-300 text-justify">
               I'm currently available to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.
             </p>
             <div className="space-y-4">

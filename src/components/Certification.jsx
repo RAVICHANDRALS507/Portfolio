@@ -5,9 +5,16 @@ const Certification = () => {
   return (
     <section id="certificate" className="py-20 bg-[#161513] text-white">
       <div className="max-w-5xl mx-auto px-4">
-        <div className="flex items-center gap-4 mb-10">
-          <h1 className="text-3xl font-bold">My Achievements</h1>
-          <img src={theme_pattern} alt="" className="h-8" />
+        <div className="relative flex justify-start mb-10 items-center pl-1">
+          <span className="absolute left-24 top-1/3 -translate-y-1/3 z-0 pointer-events-none">
+            <img
+              src={theme_pattern}
+              alt="Theme Pattern"
+              className="w-36 h-11 md:w-44 md:h-16 opacity-40"
+              style={{ objectFit: "contain" }}
+            />
+          </span>
+          <h1 className="text-3xl font-bold relative z-10 px-4 bg-transparent">My Achievements</h1>
         </div>
         <div className="space-y-8">
           <div className="flex flex-col md:flex-row items-center bg-[#232526] rounded-xl p-6 shadow-lg gap-6">
@@ -21,7 +28,7 @@ const Certification = () => {
                 Research Paper on Optimized Processing to detect Breast Cancer
               </h2>
               <small className="text-yellow-400">2025</small>
-              <p className="text-gray-300 mt-2">
+              <p className="text-gray-300 mt-2 mb-4">
                 Presented at the 5th International Conference on Smart Data
                 Intelligence (ICSMDI-2025) organised by Kongunadu College of
                 Engineering and Technology, Trichy, Tamil Nadu, India on January
@@ -46,7 +53,7 @@ const Certification = () => {
             <div>
               <h2 className="text-xl font-bold">Problem Solving (Basic)</h2>
               <small className="text-yellow-400">2025</small>
-              <p className="text-gray-300 mt-2">
+              <p className="text-gray-300 mt-2 mb-4">
                 Gained a Certificate in Problem Solving Basic Java(DSA) in
                 HackerRank.
               </p>
@@ -69,7 +76,7 @@ const Certification = () => {
             <div>
               <h2 className="text-xl font-bold">HacktoberFest contributor</h2>
               <small className="text-yellow-400">2024</small>
-              <p className="text-gray-300 mt-2">
+              <p className="text-gray-300 mt-2 mb-4">
                 Participated in HacktoberFest 2024 Open Source contribution
                 which was conducted in the month of October 1-30, contributed to
                 open source and created 4 Merge Requests successfully and
@@ -94,7 +101,7 @@ const Certification = () => {
             <div>
               <h2 className="text-xl font-bold">CodSoft Internship</h2>
               <small className="text-yellow-400">July-August 2024</small>
-              <p className="text-gray-300 mt-2">
+              <p className="text-gray-300 mt-2 mb-4">
                 Did an Internship at CodSoft which was 4 weeks, created a
                 responsive design portfolio.
               </p>
