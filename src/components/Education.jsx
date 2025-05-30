@@ -27,7 +27,7 @@ const Education = () => {
               <div className="absolute left-[-8px] top-6 w-4 h-4 bg-green-600 border-2 border-white rounded-full"></div>
               <h4 className="text-green-500 text-lg md:text-xl font-semibold">2023 - Present</h4>
               <h3 className="text-white text-xl md:text-2xl font-bold mt-2">Master's Degree</h3>
-              <p className="text-gray-300 mt-2 text-base md:text-lg leading-relaxed">
+              <p className="mb-4 text-gray-300">
                 Pursuing Masters of Computer Application (MCA) from Presidency University Bangalore.
               </p>
             </div>
@@ -37,7 +37,7 @@ const Education = () => {
               <div className="absolute left-[-8px] top-6 w-4 h-4 bg-green-600 border-2 border-white rounded-full"></div>
               <h4 className="text-green-500 text-lg md:text-xl font-semibold">2020 - 2023</h4>
               <h3 className="text-white text-xl md:text-2xl font-bold mt-2">Bachelor's Degree</h3>
-              <p className="text-gray-300 mt-2 text-base md:text-lg leading-relaxed">
+              <p className="mb-4 text-gray-300">
                 Completed my Bachelor's of Computer Application from NIE First Grade College Mysuru.
               </p>
             </div>
@@ -47,7 +47,7 @@ const Education = () => {
               <div className="absolute left-[-8px] top-6 w-4 h-4 bg-green-600 border-2 border-white rounded-full"></div>
               <h4 className="text-green-500 text-lg md:text-xl font-semibold">2018 - 2020</h4>
               <h3 className="text-white text-xl md:text-2xl font-bold mt-2">12th School</h3>
-              <p className="text-gray-300 mt-2 text-base md:text-lg leading-relaxed">
+              <p className="mb-4 text-gray-300">
                 Completed my 12th from Sarada Vilas PU college in field of Commerce with the combination of Computer Science.
               </p>
             </div>

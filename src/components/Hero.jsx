@@ -7,11 +7,12 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 py-12 md:py-20 bg-gradient-to-b from-[#161513] to-[#232526] text-center md:text-left gap-0 md:gap-12"
+      className="mt-10 flex flex-col md:flex-row items-center justify-center min-h-screen px-6 py-12 md:py-20 bg-gradient-to-b from-[#161513] to-[#232526] text-center md:text-left gap-0 md:gap-12"
     >
       {/* Right Section - Image */}
             {/* Right Section - Image */}
-            <div className="flex justify-center flex-1 order-1 md:order-2">
+            {/* <div className="flex justify-center flex-1 order-1 md:order-2"> */}
+            <div className="flex justify-center mt-10 order-1 md:order-2">
         <img
           src={Picture}
           alt="Ravichandra"
@@ -20,7 +21,7 @@ const Hero = () => {
       </div>
 
       {/* Left Section - Text + Buttons */}
-      <div className="flex flex-col items-center md:items-start flex-1 order-2 md:order-1 md:ml-28">
+      <div className="mt-8 flex flex-col items-center md:items-start flex-1 order-2 md:order-1 md:ml-28">
         <h1 className="text-3xl md:text-5xl font-bold text-white">
           <TypeAnimation
             sequence={[
