@@ -17,7 +17,9 @@ const Projects = () => {
               style={{ objectFit: "contain" }}
             />
           </span>
-          <h1 className="text-3xl font-bold relative z-10 px-4 bg-transparent">My Projects</h1>
+          <h1 className="text-3xl font-bold relative z-10 px-4 bg-transparent">
+            My Projects
+          </h1>
         </div>
 
         {/* Project Cards */}
@@ -35,8 +37,15 @@ const Projects = () => {
               </h2>
               <p className="mb-4 text-gray-300">{project.p_desc}</p>
               <div className="flex items-center gap-2 text-purple-400 cursor-pointer hover:underline">
-                <span>Read More</span>
-                <img src={arrow_icon} alt="" className="w-5 h-5" />
+                <a
+                  href={project.p_link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  <span>Read More</span>
+                  <img src={arrow_icon} alt="" className="w-5 h-5" />
+                </a>
               </div>
             </div>
           ))}

@@ -28,7 +28,7 @@ const Certification = () => {
                 Research Paper on Optimized Processing to detect Breast Cancer
               </h2>
               <small className="text-yellow-400">2025</small>
-              <p className="text-gray-300 mt-2 mb-4">
+              <p className="text-gray-300 mt-2 mb-4 text-justify">
                 Presented at the 5th International Conference on Smart Data
                 Intelligence (ICSMDI-2025) organised by Kongunadu College of
                 Engineering and Technology, Trichy, Tamil Nadu, India on January
@@ -36,7 +36,7 @@ const Certification = () => {
               </p>
               <a
                 className="inline-block mt-2 px-4 py-2 bg-yellow-400 text-black rounded-full font-semibold hover:bg-yellow-500 transition"
-                href="https://drive.google.com/file/d/15H89jz716wAxXgwTNKiGK4NrKY3P0c16/view?usp=drivesdk"
+                href="https://www.linkedin.com/posts/ravichandrals_researchdoc-activity-7283727121355587584-qPyu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC78AKQBJyaQbuGyCh4yZpz66VZx7ly7zzg"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -53,7 +53,7 @@ const Certification = () => {
             <div>
               <h2 className="text-xl font-bold">Problem Solving (Basic)</h2>
               <small className="text-yellow-400">2025</small>
-              <p className="text-gray-300 mt-2 mb-4">
+              <p className="text-gray-300 mt-2 mb-4 text-justify">
                 Gained a Certificate in Problem Solving Basic Java(DSA) in
                 HackerRank.
               </p>
@@ -76,7 +76,7 @@ const Certification = () => {
             <div>
               <h2 className="text-xl font-bold">HacktoberFest contributor</h2>
               <small className="text-yellow-400">2024</small>
-              <p className="text-gray-300 mt-2 mb-4">
+              <p className="text-gray-300 mt-2 mb-4 text-justify">
                 Participated in HacktoberFest 2024 Open Source contribution
                 which was conducted in the month of October 1-30, contributed to
                 open source and created 4 Merge Requests successfully and
@@ -101,7 +101,7 @@ const Certification = () => {
             <div>
               <h2 className="text-xl font-bold">CodSoft Internship</h2>
               <small className="text-yellow-400">July-August 2024</small>
-              <p className="text-gray-300 mt-2 mb-4">
+              <p className="text-gray-300 mt-2 mb-4 text-justify">
                 Did an Internship at CodSoft which was 4 weeks, created a
                 responsive design portfolio.
               </p>

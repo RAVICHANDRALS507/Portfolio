@@ -6,7 +6,7 @@ import call_icon from "../assets/call_icon.svg";
 
 const Footer = () => {
   return (
-    <footer className="footer water-wave bg-[#161513] text-gray-400 pt-12 pb-28 relative">
+    <footer className="footer water-wave bg-[#161513] text-gray-400 pt-9 pb-10 relative">
       <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10 z-10 relative">
         {/* Contact Info */}
         <div className="flex flex-col gap-4 text-lg">
