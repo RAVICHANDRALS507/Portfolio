@@ -26,8 +26,14 @@ const LeetCodeStats = () => {
     fetchStats();
   }, []);
 
-  if (loading) return <div className="text-center py-10">Loading LeetCode stats...</div>;
-  if (!stats) return <div className="text-center py-10 text-red-500">Failed to load stats.</div>;
+  if (loading)
+    return <div className="text-center py-10">Loading LeetCode stats...</div>;
+  if (!stats)
+    return (
+      <div className="text-center py-10 text-red-500">
+        Failed to load stats.
+      </div>
+    );
 
   return (
     <section id="leetcode" className="py-12 bg-[#18181b] text-white">
@@ -48,39 +54,64 @@ const LeetCodeStats = () => {
         </div>
         <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">
           <img
-            src={stats.avatar && stats.avatar !== "" ? stats.avatar : fallbackProfile}
+            src={
+              stats.avatar && stats.avatar !== ""
+                ? stats.avatar
+                : fallbackProfile
+            }
             alt={stats.username}
             className="w-20 h-20 rounded-full border-4 border-yellow-400 object-cover"
-            onError={e => {
+            onError={(e) => {
               e.target.onerror = null;
               e.target.src = fallbackProfile;
             }}
           />
           <div className="text-center sm:text-left">
-            <h1 className="text-2xl font-bold">{stats.name || stats.username}</h1>
-            <p className="text-yellow-400">
-              Ranking: {stats.ranking ?? "N/A"}
-            </p>
-            <p className="text-gray-400">
-              Country: {stats.country || "N/A"}
-            </p>
-            <p className="text-gray-400">
-              Contribution Points: {stats.contributionPoints ?? "N/A"}
-            </p>
-            <p className="text-gray-400">
-              Reputation: {stats.reputation ?? "N/A"}
-            </p>
-            <p className="text-gray-400">
-              Acceptance Rate:{" "}
-              {stats.acceptanceRate !== undefined && stats.acceptanceRate !== null && stats.acceptanceRate !== ""
-                ? `${stats.acceptanceRate}%`
-                : "N/A"}
-            </p>
-            <p className="text-gray-400">
-              Total Solved: {stats.totalSolved ?? "N/A"} / {stats.totalQuestions ?? "N/A"}
+            <h1 className="text-2xl font-bold">
+              {stats.name || stats.username}
+            </h1>
+            <p className="text-yellow-400 pb-4">Ranking: {stats.ranking ?? "N/A"}</p>
+            <div className="grid grid-cols-2 w-full max-w-3xl mx-auto gap-x-8 gap-y-2">
+              {/* Left column */}
+              <div>
+                <p className="text-gray-400">
+                  Country:{" "}
+                  <span className="font-normal">{stats.country || "N/A"}</span>
+                </p>
+                <p className="text-gray-400">
+                  Contribution Points:{" "}
+                  <span className="font-normal">
+                    {stats.contributionPoints ?? "N/A"}
+                  </span>
+                </p>
+              </div>
+              {/* Right column */}
+              <div className="text-right">
+                <p className="text-gray-400">
+                  Reputation:{" "}
+                  <span className="font-normal">{stats.reputation ?? "N/A"}</span>
+                </p>
+                <p className="text-gray-400">
+                  Acceptance Rate:{" "}
+                  <span className="font-normal">
+                    {stats.acceptanceRate !== undefined &&
+                    stats.acceptanceRate !== null &&
+                    stats.acceptanceRate !== ""
+                      ? `${stats.acceptanceRate}%`
+                      : "N/A"}
+                  </span>
+                </p>
+              </div>
+            </div>
+            <p className="text-yellow-400 pt-10 text-center mt-6 sm:pt-4 sm:mt-0 sm:text-left">
+              Total Solved:{" "}
+              <span className="font-normal">
+                {stats.totalSolved ?? "N/A"} / {stats.totalQuestions ?? "N/A"}
+              </span>
             </p>
           </div>
         </div>
+
         <div className="grid grid-cols-3 gap-6 text-center mb-8">
           <div className="bg-[#232526] rounded-xl p-6 shadow-lg">
             <h2 className="text-xl font-bold text-yellow-400">Easy</h2>
@@ -98,14 +129,31 @@ const LeetCodeStats = () => {
             <p className="text-gray-400">/ {stats.totalHard}</p>
           </div>
         </div>
+        <div className="my-8">
+          <h2 className="text-2xl font-bold mb-4 text-yellow-400">
+            LeetCode Stats & Heatmap
+          </h2>
+          <div className="bg-[#232526] rounded-xl p-4 shadow-lg w-full flex justify-center">
+            <img
+              src="https://leetcard.jacoblin.cool/ravichandra_ls?theme=dark&ext=heatmap"
+              alt="LeetCode Stats Card"
+              className="w-full max-w-2xl sm:max-w-3xl mx-auto rounded-lg object-contain sm:max-h-64"
+              // className="w-full max-w-2xl sm:max-w-3xl mx-auto rounded-lg object-contain sm:max-h-64"
+            />
+          </div>
+        </div>
         <div className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-yellow-400">Recent Submissions</h2>
+          <h2 className="text-2xl font-bold mb-4 text-yellow-400">
+            Recent Submissions
+          </h2>
           <div className="overflow-x-auto">
             <table className="min-w-full bg-[#232526] rounded-lg">
               <thead>
                 <tr>
                   <th className="py-2 px-4 text-left text-yellow-400">Title</th>
-                  <th className="py-2 px-4 text-left text-yellow-400">Status</th>
+                  <th className="py-2 px-4 text-left text-yellow-400">
+                    Status
+                  </th>
                   <th className="py-2 px-4 text-left text-yellow-400">Time</th>
                 </tr>
               </thead>
@@ -113,8 +161,12 @@ const LeetCodeStats = () => {
                 {stats.recentSubmissions?.slice(0, 5).map((sub, idx) => (
                   <tr key={idx} className="border-t border-gray-700">
                     <td className="py-2 px-4">{sub.title}</td>
-                    <td className="py-2 px-4 text-gray-400">{sub.statusDisplay}</td>
-                    <td className="py-2 px-4 text-gray-400">{new Date(sub.timestamp * 1000).toLocaleString()}</td>
+                    <td className="py-2 px-4 text-gray-400">
+                      {sub.statusDisplay}
+                    </td>
+                    <td className="py-2 px-4 text-gray-400">
+                      {new Date(sub.timestamp * 1000).toLocaleString()}
+                    </td>
                   </tr>
                 ))}
               </tbody>
