@@ -16,8 +16,9 @@ const App = () => (
   <div>
     <Navbar />
     <Hero />
-    <LeetCodeStats />
+    
     <About />
+    <LeetCodeStats />
     <Projects />
     <Education />
     <Certification />

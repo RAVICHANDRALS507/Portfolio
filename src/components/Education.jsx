@@ -35,7 +35,7 @@ const Education = () => {
                 Master's Degree
               </h3>
               <p className="mb-4 text-gray-300">
-                Pursuing Masters of Computer Application (MCA) from Presidency
+                Completed Masters of Computer Application (MCA) from Presidency
                 University Bangalore.
               </p>
             </div>

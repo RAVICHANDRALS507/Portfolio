@@ -7,8 +7,8 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 py-0 md:py-0 bg-gradient-to-b from-[#161513] to-[#232526] text-center md:text-left gap-0 md:gap-12"
-    >
+  className="flex flex-col md:flex-row items-center justify-center min-h-[70vh] md:min-h-screen px-6 py-4 md:py-0 bg-gradient-to-b from-[#161513] to-[#232526] text-center md:text-left gap-0 md:gap-12"
+>
       {/* Right Section - Image */}
       <div className="flex justify-center mt-0 md:mt-0 order-1 md:order-2">
         <img
@@ -35,10 +35,10 @@ const Hero = () => {
           />
           <br />
           <span className=" md:text-2xl font-medium text-gray-300">
-            Frontend Developer from India
+            Full-Stack Developer from India
           </span>
         </h1>
-
+        <p>Ex Intern @ Nexinbe | HacktoberFest 2024 | Presidency University Bangalore MCA 2025</p>
         <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-4 w-full md:w-auto mt-4 mb-0">
           <AnchorLink
             className="px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-yellow-400 to-purple-500 hover:scale-105 transition w-full md:w-auto text-center"

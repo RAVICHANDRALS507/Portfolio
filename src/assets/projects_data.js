@@ -24,13 +24,13 @@ const Projects_Data = [
         p_link: "https://github.com/RAVICHANDRALS507/search-engine"
     },
     {
-        p_no: "04",
+        p_no: "05",
         p_name: "Gemini-Chat-API",
         p_desc: "Designed a prompt platform using gemini API",
         p_link: "https://github.com/RAVICHANDRALS507/gemini-chat-api"
     },
     {
-        p_no: "05",
+        p_no: "06",
         p_name: "WhiteBoard",
         p_desc: "This whiteBoard helps to explain topics...",
         p_link: "https://github.com/RAVICHANDRALS507/whiteboard"
