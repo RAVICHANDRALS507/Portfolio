@@ -10,11 +10,13 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import './index.css'
+import LeetCodeStats from './components/LeetCodeStats';
 
 const App = () => (
   <div>
     <Navbar />
     <Hero />
+    <LeetCodeStats />
     <About />
     <Projects />
     <Education />
