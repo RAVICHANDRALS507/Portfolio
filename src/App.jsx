@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import './index.css'
 import LeetCodeStats from './components/LeetCodeStats';
+import GitHubStats from './components/GithubStats';
 
 const App = () => (
   <div>
@@ -21,6 +22,7 @@ const App = () => (
     <LeetCodeStats />
     <Projects />
     <Education />
+    <GitHubStats />
     <Certification />
     <Contact />
     <Footer />

@@ -14,7 +14,7 @@ const Hero = () => {
         <img
           src={Picture}
           alt="Ravichandra"
-          className="w-full sm:w-5/6 md:w-[450px] h-30 sm:h-56 md:h-auto max-w-xs sm:max-w-sm md:max-w-none rounded-[100px] object-cover shadow-xl transition-all duration-300"
+          className="w-full sm:w-5/6 md:w-[450px] h-30 sm:h-56 md:h-auto max-w-xs sm:max-w-sm md:max-w-none rounded-[100px] object-cover shadow-xl transition-all duration-300 md:-ml-16"
         />
       </div>
 
@@ -34,11 +34,24 @@ const Hero = () => {
             className="bg-gradient-to-r from-yellow-400 via-purple-400 to-pink-500 bg-clip-text text-transparent inline-block"
           />
           <br />
-          <span className=" md:text-2xl font-medium text-gray-300">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-300 mb-2">
             Full-Stack Developer from India
-          </span>
+          </h2>
         </h1>
-        <p>Ex Intern @ Nexinbe | HacktoberFest 2024 | Presidency University Bangalore MCA 2025</p>
+
+
+        {/* Mobile view: single line with pipes */}
+        <p className="text-base sm:text-lg md:text-xl text-gray-400 block md:hidden">
+          Ex Intern @ Nexinbe | HacktoberFest 2024 | Presidency University Bangalore MCA 2025
+        </p>
+
+        {/* Desktop view: stacked vertically */}
+        <div className="text-base sm:text-lg md:text-xl text-gray-400 mb-2 hidden md:flex md:flex-col md:items-start md:space-y-1">
+          <span>Ex Intern @ Nexinbe</span>
+          <span>HacktoberFest 2024</span>
+          <span>Presidency University Bangalore MCA 2025</span>
+        </div>
+
         <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-4 w-full md:w-auto mt-4 mb-0">
           <AnchorLink
             className="px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-yellow-400 to-purple-500 hover:scale-105 transition w-full md:w-auto text-center"

@@ -3,7 +3,7 @@ import theme_pattern from "../assets/theme_pattern.svg";
 
 const Certification = () => {
   return (
-    <section id="certificate" className="py-20 bg-[#161513] text-white">
+    <section id="certificate" className="py-5 bg-[#161513] text-white">
       <div className="max-w-5xl mx-auto px-4">
         <div className="relative flex justify-start mb-10 items-center pl-1">
           <span className="absolute left-24 top-1/3 -translate-y-1/3 z-0 pointer-events-none">
@@ -14,7 +14,7 @@ const Certification = () => {
               style={{ objectFit: "contain" }}
             />
           </span>
-          <h1 className="text-3xl font-bold relative z-10 px-4 bg-transparent">My Achievements</h1>
+          <h1 className="text-3xl font-bold relative z-10 px-4 bg-transparent">Research & Certification</h1>
         </div>
         <div className="space-y-8">
           <div className="flex flex-col md:flex-row items-center bg-[#232526] rounded-xl p-6 shadow-lg gap-6">

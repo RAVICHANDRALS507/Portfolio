@@ -27,7 +27,7 @@ const LeetCodeStats = () => {
   }, []);
 
   if (loading)
-    return <div className="text-center py-10">Loading LeetCode stats...</div>;
+    return <div className="text-center py-5">Loading LeetCode stats...</div>;
   if (!stats)
     return (
       <div className="text-center py-10 text-red-500">
@@ -37,7 +37,7 @@ const LeetCodeStats = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#161513] to-[#232526] text-white">
-      <section id="leetcode" className="py-12 bg-[#18181b] text-white">
+      <section id="leetcode" className="py-5 bg-[#18181b] text-white">
         <div className="max-w-3xl mx-auto px-4">
           {/* Section Title with theme pattern behind */}
           <div className="relative flex justify-center sm:justify-start mb-10 items-center pl-1">
@@ -163,7 +163,16 @@ const LeetCodeStats = () => {
                 <tbody>
                   {stats.recentSubmissions?.slice(0, 5).map((sub, idx) => (
                     <tr key={idx} className="border-t border-gray-700">
-                      <td className="py-2 px-4">{sub.title}</td>
+                      <td className="py-2 px-4">
+                        <a
+                          href={`https://leetcode.com/problems/${sub.titleSlug}/`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-400 hover:underline"
+                        >
+                          {sub.title}
+                        </a>
+                      </td>
                       <td className="py-2 px-4 text-gray-400">
                         {sub.statusDisplay}
                       </td>

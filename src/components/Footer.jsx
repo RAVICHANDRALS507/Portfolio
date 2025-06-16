@@ -1,8 +1,7 @@
 import React from "react";
-import mail_icon from "../assets/mail_icon.svg";
-import location_icon from "../assets/location_icon.svg";
-import call_icon from "../assets/call_icon.svg";
-// import "../styles/footer.css"; // For wave animation (see below)
+import mail_icon from '../assets/gmail.png';
+import call_icon from '../assets/call.png';
+import location_icon from '../assets/location.png';
 
 const Footer = () => {
   return (
@@ -11,7 +10,7 @@ const Footer = () => {
         {/* Contact Info */}
         <div className="flex flex-col gap-4 text-lg">
           <div className="flex items-center gap-4">
-            <img src={mail_icon} alt="Email" className="w-6 h-6" />
+            <img src={mail_icon} alt="Gmail" className="w-6 h-6" />
             <span>cravi7715@gmil.com</span>
           </div>
           <div className="flex items-center gap-4">
@@ -19,7 +18,7 @@ const Footer = () => {
             <span>+91 7892968904</span>
           </div>
           <div className="flex items-center gap-4">
-            <img src={location_icon} alt="Location" className="w-6 h-6" />
+            <img src={location_icon} alt="Location" className="w-6 h-8" />
             <span>Bangalore, Karnataka</span>
           </div>
         </div>

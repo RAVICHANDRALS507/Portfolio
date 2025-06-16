@@ -4,7 +4,7 @@ import profile_img from "../assets/about.png";
 
 const About = () => {
   return (
-    <section id="about" className="py-12 bg-[#161513] text-white">
+    <section id="about" className="py-5 bg-[#161513] text-white">
       <div className="max-w-5xl mx-auto px-4">
         {/* Section Title with theme pattern behind */}
         <div className="relative flex justify-start mb-10 items-center pl-1">
