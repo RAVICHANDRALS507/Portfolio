@@ -38,7 +38,7 @@ const LeetCodeStats = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#161513] to-[#232526] text-white">
       <section id="leetcode" className="py-5 bg-[#18181b] text-white">
-        <div className="max-w-3xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4">
           {/* Section Title with theme pattern behind */}
           <div className="relative flex justify-center sm:justify-start mb-10 items-center pl-1">
             <span className="absolute left-1/2 sm:left-12 top-1/3 -translate-x-1/2 sm:-translate-x-0 -translate-y-1/3 z-0 pointer-events-none">

@@ -72,7 +72,7 @@ const About = () => {
 
             {/* Skills Section */}
             <div className="flex flex-wrap gap-4 mb-6 mt-8 md:mt-0 justify-center md:justify-start">
-              <span className="bg-white-700/20 text-white-300 px-4 py-2 rounded-full font-semibold">
+              <span className="bg-pink-700/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
                 Core Java
               </span>
               <span className="bg-purple-700/20 text-purple-300 px-4 py-2 rounded-full font-semibold">
@@ -84,19 +84,19 @@ const About = () => {
               <span className="bg-pink-700/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
                 MySQL
               </span>
-              <span className="bg-pink-700/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
+              <span className="bg-purple-700/20 text-purple-300 px-4 py-2 rounded-full font-semibold">
                 Data Structures & Algorithm
               </span>
               <span className="bg-pink-700/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
                 HTML & CSS
               </span>
-              <span className="bg-pink-700/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
+              <span className="bg-blue-700/20 text-blue-300 px-4 py-2 rounded-full font-semibold">
                 Computer Network
               </span>
               <span className="bg-pink-700/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
                 Operating System
               </span>
-              <span className="bg-pink-700/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
+              <span className="bg-purple-700/20 text-purple-300 px-4 py-2 rounded-full font-semibold">
                 OOPS
               </span>
             </div>
@@ -105,13 +105,13 @@ const About = () => {
             <div className="flex gap-10 justify-center md:justify-end mt-8 md:mt-0">
               <div className="text-center md:text-right">
                 <h2 className="text-3xl md:text-4xl font-bold">4+</h2>
-                <p className="text-gray-700 text-base md:text-lg">
+                <p className="text-gray-400 text-base md:text-lg">
                   Projects Completed
                 </p>
               </div>
               <div className="text-center md:text-right">
                 <h2 className="text-3xl md:text-4xl font-bold">1.5+</h2>
-                <p className="text-gray-700 text-base md:text-lg">
+                <p className="text-gray-400 text-base md:text-lg">
                   Years Experience
                 </p>
               </div>

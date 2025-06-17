@@ -12,6 +12,7 @@ import Navbar from './components/Navbar';
 import './index.css'
 import LeetCodeStats from './components/LeetCodeStats';
 import GitHubStats from './components/GithubStats';
+import BotpressChatbot from './components/BotPressChatbot';
 
 const App = () => (
   <div>
@@ -19,13 +20,15 @@ const App = () => (
     <Hero />
     
     <About />
-    <LeetCodeStats />
+    <GitHubStats />
     <Projects />
     <Education />
-    <GitHubStats />
+    
+    <LeetCodeStats />
     <Certification />
     <Contact />
     <Footer />
+    <BotpressChatbot />
   </div>
 );
 

@@ -28,7 +28,7 @@ const GitHubStats = () => {
 
   return (
     <section id="github" className="py-5 bg-[#18181b] text-white">
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="max-w-5xl mx-auto px-4">
         {/* Section Title with theme pattern */}
         <div className="relative flex justify-center sm:justify-start mb-10 items-center pl-1">
           <span className="absolute left-1/2 sm:left-12 top-1/3 -translate-x-1/2 sm:-translate-x-0 -translate-y-1/3 z-0 pointer-events-none">

@@ -54,6 +54,12 @@ const Contact = () => {
           {/* Row 1: Right to Left */}
           <div className="overflow-hidden whitespace-nowrap">
             <div className="inline-block animate-marquee-left">
+               <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="mx-8 inline-block">
+                <div className="flex flex-col items-center">
+                  <img src={github} alt="Github" className="h-12 w-12 mb-1" />
+                  <span className="text-base font-semibold text-blue-500">Github</span>
+                </div>
+              </a>
               {/* Twitter */}
               <a href="https://x.com/Ravichandra_LS" target="_blank" rel="noopener noreferrer" className="mx-8 inline-block">
                 <div className="flex flex-col items-center">

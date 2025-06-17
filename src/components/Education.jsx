@@ -5,7 +5,7 @@ import edu from "../assets/edu.jpg"; // <-- Make sure this file exists in your a
 const Education = () => {
   return (
     <section id="education" className="py-5 bg-[#18181b] text-white">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6">
         {/* Section Title with theme pattern behind */}
         <div className="relative flex justify-start mb-10 items-center pl-1">
           <span className="absolute left-12 top-1/3 -translate-y-1/3 z-0 pointer-events-none">
