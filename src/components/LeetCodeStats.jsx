@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import fallbackProfile from "../assets/pic.png";
-import theme_pattern from "../assets/theme_pattern.svg"; // Add this import
+import theme_pattern from "../assets/theme_pattern.svg";
 
-const LEETCODE_USERNAME = "ravichandra_ls"; // your username
+const LEETCODE_USERNAME = "ravichandra_ls";
 
 const LeetCodeStats = () => {
   const [stats, setStats] = useState(null);
@@ -40,7 +40,10 @@ const LeetCodeStats = () => {
       <section id="leetcode" className="py-5 bg-[#18181b] text-white">
         <div className="max-w-5xl mx-auto px-4">
           {/* Section Title with theme pattern behind */}
-          <div className="relative flex justify-center sm:justify-start mb-10 items-center pl-1">
+          <div
+            className="relative flex justify-center sm:justify-start mb-10 items-center pl-1"
+            data-aos="fade-down"
+          >
             <span className="absolute left-1/2 sm:left-12 top-1/3 -translate-x-1/2 sm:-translate-x-0 -translate-y-1/3 z-0 pointer-events-none">
               <img
                 src={theme_pattern}
@@ -53,7 +56,10 @@ const LeetCodeStats = () => {
               LeetCode Profile
             </h1>
           </div>
-          <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">
+          <div
+            className="flex flex-col sm:flex-row items-center gap-6 mb-8"
+            data-aos="fade-up"
+          >
             <img
               src={
                 stats.avatar && stats.avatar !== ""
@@ -116,23 +122,32 @@ const LeetCodeStats = () => {
           </div>
 
           <div className="grid grid-cols-3 gap-6 text-center mb-8">
-            <div className="bg-[#232526] rounded-xl p-6 shadow-lg">
+            <div
+              className="bg-[#232526] rounded-xl p-6 shadow-lg"
+              data-aos="fade-right"
+            >
               <h2 className="text-xl font-bold text-yellow-400">Easy</h2>
               <p className="text-3xl font-bold">{stats.easySolved}</p>
               <p className="text-gray-400">/ {stats.totalEasy}</p>
             </div>
-            <div className="bg-[#232526] rounded-xl p-6 shadow-lg">
+            <div
+              className="bg-[#232526] rounded-xl p-6 shadow-lg"
+              data-aos="fade-up"
+            >
               <h2 className="text-xl font-bold text-yellow-400">Medium</h2>
               <p className="text-3xl font-bold">{stats.mediumSolved}</p>
               <p className="text-gray-400">/ {stats.totalMedium}</p>
             </div>
-            <div className="bg-[#232526] rounded-xl p-6 shadow-lg">
+            <div
+              className="bg-[#232526] rounded-xl p-6 shadow-lg"
+              data-aos="fade-left"
+            >
               <h2 className="text-xl font-bold text-yellow-400">Hard</h2>
               <p className="text-3xl font-bold">{stats.hardSolved}</p>
               <p className="text-gray-400">/ {stats.totalHard}</p>
             </div>
           </div>
-          <div className="my-8">
+          <div className="my-8" data-aos="zoom-in">
             <h2 className="text-2xl font-bold mb-4 text-yellow-400">
               LeetCode Stats & Heatmap
             </h2>
@@ -141,11 +156,10 @@ const LeetCodeStats = () => {
                 src="https://leetcard.jacoblin.cool/ravichandra_ls?theme=dark&ext=heatmap"
                 alt="LeetCode Stats Card"
                 className="w-full max-w-2xl sm:max-w-3xl mx-auto rounded-lg object-contain sm:max-h-64"
-                // className="w-full max-w-2xl sm:max-w-3xl mx-auto rounded-lg object-contain sm:max-h-64"
               />
             </div>
           </div>
-          <div className="mb-8">
+          <div className="mb-8" data-aos="fade-up">
             <h2 className="text-2xl font-bold mb-4 text-yellow-400">
               Recent Submissions
             </h2>

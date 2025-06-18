@@ -9,13 +9,11 @@ import facebook from '../assets/facebook.png'
 import Insta from '../assets/Insta.png'
 import linkedin from '../assets/linkedin.png'
 import github from '../assets/github.png'
-import gmail from '../assets/gmail.png'
 
 const Contact = () => {
   // email
   const onSubmit = async (event) => {
     event.preventDefault();
-    // setResult("Sending....");
     const formData = new FormData(event.target);
 
     formData.append("access_key", "223b03c7-6bbc-4943-a63f-d3ced0872e7c");
@@ -38,7 +36,11 @@ const Contact = () => {
   return (
     <section id='contact' className='py-5 bg-[#18181b] text-white'>
       <div className="max-w-5xl mx-auto px-4">
-        <div className="relative flex justify-start mb-10 items-center pl-1">
+        {/* Section Title */}
+        <div
+          className="relative flex justify-start mb-10 items-center pl-1"
+          data-aos="fade-down"
+        >
           <span className="absolute left-12 top-1/3 -translate-y-1/3 z-0 pointer-events-none">
             <img
               src={theme_pattern}
@@ -50,11 +52,11 @@ const Contact = () => {
           <h1 className="text-3xl font-bold relative z-10 px-4 bg-transparent">Get in Touch</h1>
         </div>
         {/* Social Media Marquee Section */}
-        <div className="mt-20 mb-20 space-y-4">
+        <div className="mt-20 mb-20 space-y-4" data-aos="zoom-in">
           {/* Row 1: Right to Left */}
           <div className="overflow-hidden whitespace-nowrap">
             <div className="inline-block animate-marquee-left">
-               <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="mx-8 inline-block">
+              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="mx-8 inline-block">
                 <div className="flex flex-col items-center">
                   <img src={github} alt="Github" className="h-12 w-12 mb-1" />
                   <span className="text-base font-semibold text-blue-500">Github</span>
@@ -88,37 +90,26 @@ const Contact = () => {
                   <span className="text-base font-semibold text-red-500">Mail</span>
                 </div>
               </a>
-              {/* Repeat for seamless scrolling */}
+              {/* Snapchat */}
               <a href="https://snapchat.com/yourusername" target="_blank" rel="noopener noreferrer" className="mx-8 inline-block">
                 <div className="flex flex-col items-center">
                   <img src={snapchat} alt="Snapchat" className="h-12 w-12 mb-1" />
                   <span className="text-base font-semibold text-blue-400">Snapchat</span>
                 </div>
               </a>
+              {/* Linkedin */}
               <a href="https://www.linkedin.com/in/ravichandrals" target="_blank" rel="noopener noreferrer" className="mx-8 inline-block">
                 <div className="flex flex-col items-center">
                   <img src={linkedin} alt="Linkedin" className="h-12 w-12 mb-1" />
                   <span className="text-base font-semibold text-blue-700">Linkedin</span>
                 </div>
               </a>
-              {/* <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="mx-8 inline-block">
-                <div className="flex flex-col items-center">
-                  <img src={Insta} alt="Instagram" className="h-12 w-12 mb-1" />
-                  <span className="text-base font-semibold text-pink-500">Instagram</span>
-                </div>
-              </a>
-              <a href="mailto:your@email.com" target="_blank" rel="noopener noreferrer" className="mx-8 inline-block">
-                <div className="flex flex-col items-center">
-                  <img src={mail_icon} alt="Mail" className="h-12 w-12 mb-1" />
-                  <span className="text-base font-semibold text-red-500">Mail</span>
-                </div>
-              </a> */}
             </div>
           </div>
-          
         </div>
         <div className="flex flex-col md:flex-row gap-10">
-          <div className="flex-1">
+          {/* Left: Let's talk */}
+          <div className="flex-1" data-aos="fade-right">
             <h2 className="text-2xl font-bold mb-4">Let's talk</h2>
             <p className="mb-6 text-gray-300 text-justify">
               I'm currently available to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.
@@ -138,8 +129,12 @@ const Contact = () => {
               </div>
             </div>
           </div>
-
-          <form onSubmit={onSubmit} className='flex-1 bg-[#232526] rounded-xl p-8 shadow-lg space-y-4'>
+          {/* Right: Contact Form */}
+          <form
+            onSubmit={onSubmit}
+            className='flex-1 bg-[#232526] rounded-xl p-8 shadow-lg space-y-4'
+            data-aos="fade-left"
+          >
             <div>
               <label className="block mb-1 font-semibold">Your Name</label>
               <input type="text" placeholder='Enter your Name' name='name' className="w-full px-4 py-2 rounded bg-[#18181b] text-white border border-gray-700 focus:outline-none focus:border-yellow-400" />
@@ -157,8 +152,6 @@ const Contact = () => {
             </button>
           </form>
         </div>
-
-        
       </div>
     </section>
   );

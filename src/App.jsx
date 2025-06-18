@@ -1,6 +1,7 @@
-import React from 'react';
-import { StrictMode } from 'react'
+import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -12,25 +13,31 @@ import Navbar from './components/Navbar';
 import './index.css'
 import LeetCodeStats from './components/LeetCodeStats';
 import GitHubStats from './components/GithubStats';
-import BotpressChatbot from './components/BotPressChatbot';
+import BotpressChatbot from './components/BotpressChatbot';
 
-const App = () => (
-  <div>
-    <Navbar />
-    <Hero />
-    
-    <About />
-    <GitHubStats />
-    <Projects />
-    <Education />
-    
-    <LeetCodeStats />
-    <Certification />
-    <Contact />
-    <Footer />
-    <BotpressChatbot />
-  </div>
-);
+const App = () => {
+  React.useEffect(() => {
+    AOS.init({ once: true, duration: 800 });
+  }, []);
+
+  return (
+    <div>
+      <Navbar />
+      <Hero />
+      
+      <About />
+      <GitHubStats />
+      <Projects />
+      <Education />
+      
+      <LeetCodeStats />
+      <Certification />
+      <Contact />
+      <Footer />
+      <BotpressChatbot />
+    </div>
+  );
+};
 
 export default App;
 

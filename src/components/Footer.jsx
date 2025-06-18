@@ -6,9 +6,12 @@ import location_icon from '../assets/location.png';
 const Footer = () => {
   return (
     <footer className="footer water-wave bg-[#161513] text-gray-400 pt-9 pb-10 relative">
-      <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10 z-10 relative">
+      <div
+        className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10 z-10 relative"
+        data-aos="fade-up"
+      >
         {/* Contact Info */}
-        <div className="flex flex-col gap-4 text-lg">
+        <div className="flex flex-col gap-4 text-lg" data-aos="fade-right">
           <div className="flex items-center gap-4">
             <img src={mail_icon} alt="Gmail" className="w-6 h-6" />
             <span>cravi7715@gmil.com</span>
@@ -24,7 +27,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="text-sm text-gray-500 text-center md:text-right">
+        <div className="text-sm text-gray-500 text-center md:text-right" data-aos="fade-left">
           &copy; {new Date().getFullYear()} Ravichandra LS. All rights reserved.
         </div>
       </div>

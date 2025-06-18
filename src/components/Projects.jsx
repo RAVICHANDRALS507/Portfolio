@@ -9,7 +9,10 @@ const Projects = () => {
     <section id="project" className="py-5 bg-dark text-white font-outfit">
       <div className="max-w-5xl mx-auto px-4">
         {/* Section Title with theme pattern behind */}
-        <div className="relative flex justify-start mb-10 items-center pl-1">
+        <div
+          className="relative flex justify-start mb-10 items-center pl-1"
+          data-aos="fade-down"
+        >
           <span className="absolute left-12 top-1/3 -translate-y-1/3 z-0 pointer-events-none">
             <img
               src={theme_pattern}
@@ -28,6 +31,7 @@ const Projects = () => {
           {Experience_Data.map((project, index) => (
             <div
               key={index}
+              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
               className="bg-secondary rounded-xl p-6 shadow-lg hover:scale-105 transition-transform"
             >
               <div className="flex items-center justify-between mb-2">
@@ -56,7 +60,10 @@ const Projects = () => {
 
       <div className="max-w-5xl mx-auto px-4">
         {/* Section Title with theme pattern behind */}
-        <div className="relative flex justify-start mb-10  mt-10 items-center pl-1">
+        <div
+          className="relative flex justify-start mb-10  mt-10 items-center pl-1"
+          data-aos="fade-down"
+        >
           <span className="absolute left-12 top-1/3 -translate-y-1/3 z-0 pointer-events-none">
             <img
               src={theme_pattern}
@@ -75,6 +82,7 @@ const Projects = () => {
           {Projects_Data.map((project, index) => (
             <div
               key={index}
+              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
               className="bg-secondary rounded-xl p-6 shadow-lg hover:scale-105 transition-transform"
             >
               <div className="flex items-center justify-between mb-2">

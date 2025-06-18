@@ -5,7 +5,11 @@ const Certification = () => {
   return (
     <section id="certificate" className="py-5 bg-[#161513] text-white">
       <div className="max-w-5xl mx-auto px-4">
-        <div className="relative flex justify-start mb-10 items-center pl-1">
+        {/* Section Title with theme pattern behind */}
+        <div
+          className="relative flex justify-start mb-10 items-center pl-1"
+          data-aos="fade-down"
+        >
           <span className="absolute left-24 top-1/3 -translate-y-1/3 z-0 pointer-events-none">
             <img
               src={theme_pattern}
@@ -14,10 +18,15 @@ const Certification = () => {
               style={{ objectFit: "contain" }}
             />
           </span>
-          <h1 className="text-3xl font-bold relative z-10 px-4 bg-transparent">Research & Certification</h1>
+          <h1 className="text-3xl font-bold relative z-10 px-4 bg-transparent">
+            Research & Certification
+          </h1>
         </div>
         <div className="space-y-8">
-          <div className="flex flex-col md:flex-row items-center bg-[#232526] rounded-xl p-6 shadow-lg gap-6">
+          <div
+            className="flex flex-col md:flex-row items-center bg-[#232526] rounded-xl p-6 shadow-lg gap-6"
+            data-aos="fade-right"
+          >
             <img
               src="https://static.vecteezy.com/system/resources/previews/018/779/928/original/3d-illustration-of-amazon-logo-free-png.png"
               alt=""
@@ -44,7 +53,10 @@ const Certification = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row items-center bg-[#232526] rounded-xl p-6 shadow-lg gap-6">
+          <div
+            className="flex flex-col md:flex-row items-center bg-[#232526] rounded-xl p-6 shadow-lg gap-6"
+            data-aos="fade-left"
+          >
             <img
               src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png"
               alt=""
@@ -67,7 +79,10 @@ const Certification = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row items-center bg-[#232526] rounded-xl p-6 shadow-lg gap-6">
+          <div
+            className="flex flex-col md:flex-row items-center bg-[#232526] rounded-xl p-6 shadow-lg gap-6"
+            data-aos="fade-right"
+          >
             <img
               src="https://cdn.dribbble.com/users/2410782/screenshots/8192199/media/a152b89721e1b17597aff54afbdef152.jpg?compress=1&resize=1600x1200&vertical=top"
               alt=""
@@ -92,7 +107,10 @@ const Certification = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row items-center bg-[#232526] rounded-xl p-6 shadow-lg gap-6">
+          <div
+            className="flex flex-col md:flex-row items-center bg-[#232526] rounded-xl p-6 shadow-lg gap-6"
+            data-aos="fade-left"
+          >
             <img
               src="https://tse2.mm.bing.net/th?id=OIP.GX2bulWXKWnH05DT0SWfDwHaHa&pid=Api&P=0&h=180"
               alt=""

@@ -7,10 +7,13 @@ const Hero = () => {
   return (
     <section
       id="home"
-  className="flex flex-col md:flex-row items-center justify-center min-h-[70vh] md:min-h-screen px-6 py-4 md:py-0 bg-gradient-to-b from-[#161513] to-[#232526] text-center md:text-left gap-0 md:gap-12"
->
+      className="flex flex-col md:flex-row items-center justify-center min-h-[70vh] md:min-h-screen px-6 py-4 md:py-0 bg-gradient-to-b from-[#161513] to-[#232526] text-center md:text-left gap-0 md:gap-12"
+    >
       {/* Right Section - Image */}
-      <div className="flex justify-center mt-0 md:mt-0 order-1 md:order-2">
+      <div
+        className="flex justify-center mt-0 md:mt-0 order-1 md:order-2"
+        data-aos="fade-right"
+      >
         <img
           src={Picture}
           alt="Ravichandra"
@@ -19,7 +22,10 @@ const Hero = () => {
       </div>
 
       {/* Left Section - Text + Buttons */}
-      <div className="mt-4 mb-0 flex flex-col items-center md:items-start md:flex-1 order-2 md:order-1 md:ml-28">
+      <div
+        className="mt-4 mb-0 flex flex-col items-center md:items-start md:flex-1 order-2 md:order-1 md:ml-28"
+        data-aos="fade-left"
+      >
         <h1 className="text-3xl md:text-5xl font-bold text-white">
           <TypeAnimation
             sequence={[
@@ -38,7 +44,6 @@ const Hero = () => {
             Full-Stack Developer from India
           </h2>
         </h1>
-
 
         {/* Mobile view: single line with pipes */}
         <p className="text-base sm:text-lg md:text-xl text-gray-400 block md:hidden">

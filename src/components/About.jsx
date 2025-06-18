@@ -7,7 +7,10 @@ const About = () => {
     <section id="about" className="py-5 bg-[#161513] text-white">
       <div className="max-w-5xl mx-auto px-4">
         {/* Section Title with theme pattern behind */}
-        <div className="relative flex justify-start mb-10 items-center pl-1">
+        <div
+          className="relative flex justify-start mb-10 items-center pl-1"
+          data-aos="fade-down"
+        >
           <span className="absolute left-12 top-1/3 -translate-y-1/3 z-0 pointer-events-none">
             <img
               src={theme_pattern}
@@ -24,7 +27,10 @@ const About = () => {
         {/* Main content - Profile Image and Text */}
         <div className="flex flex-col md:flex-row gap-10 items-center md:items-start">
           {/* Profile Image - Hidden on mobile, visible on desktop */}
-          <div className="hidden md:block flex-shrink-0 w-44 h-44">
+          <div
+            className="hidden md:block flex-shrink-0 w-44 h-44"
+            data-aos="fade-right"
+          >
             <img
               src={profile_img}
               alt="Profile"
@@ -33,8 +39,8 @@ const About = () => {
           </div>
 
           {/* Text Section */}
-          <div className="flex-1 text-center md:text-left">
-            <div className="mb-6">
+          <div className="flex-1 text-center md:text-left" data-aos="fade-left">
+            <div className="mb-6" data-aos="fade-up">
               <p className="text-justify">
                 As a recent graduate in Computer Science and{" "}
                 <span className="font-bold text-white-700">
@@ -71,7 +77,10 @@ const About = () => {
             </div>
 
             {/* Skills Section */}
-            <div className="flex flex-wrap gap-4 mb-6 mt-8 md:mt-0 justify-center md:justify-start">
+            <div
+              className="flex flex-wrap gap-4 mb-6 mt-8 md:mt-0 justify-center md:justify-start"
+              data-aos="zoom-in"
+            >
               <span className="bg-pink-700/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
                 Core Java
               </span>
@@ -102,7 +111,10 @@ const About = () => {
             </div>
 
             {/* Stats Section - Larger text, right-aligned on desktop */}
-            <div className="flex gap-10 justify-center md:justify-end mt-8 md:mt-0">
+            <div
+              className="flex gap-10 justify-center md:justify-end mt-8 md:mt-0"
+              data-aos="fade-up"
+            >
               <div className="text-center md:text-right">
                 <h2 className="text-3xl md:text-4xl font-bold">4+</h2>
                 <p className="text-gray-400 text-base md:text-lg">
