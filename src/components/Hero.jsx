@@ -68,11 +68,11 @@ const Hero = () => {
 
           <a
             className="px-6 py-3 rounded-full border-2 border-white text-white font-semibold hover:border-purple-500 transition w-full md:w-auto text-center"
-            href="https://drive.google.com/file/d/1Zo8eNPjZH_n2OUcfeO2AT3il4aliw_3t/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1ubMw5CLLKZocI_oCp0_jq1u-nHP4e06C/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
-            My Resume
+            View Resume
           </a>
         </div>
       </div>

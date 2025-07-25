@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex flex-col gap-4 text-lg" data-aos="fade-right">
           <div className="flex items-center gap-4">
             <img src={mail_icon} alt="Gmail" className="w-6 h-6" />
-            <span>cravi7715@gmil.com</span>
+            <span>ravichandralsprofessional@gmail.com</span>
           </div>
           <div className="flex items-center gap-4">
             <img src={call_icon} alt="Call" className="w-6 h-6" />

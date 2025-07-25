@@ -99,6 +99,9 @@ const About = () => {
               <span className="bg-pink-700/20 text-pink-300 px-4 py-2 rounded-full font-semibold">
                 HTML & CSS
               </span>
+              <span className="bg-purple-700/20 text-purple-300 px-4 py-2 rounded-full font-semibold">
+                Database
+              </span>
               <span className="bg-blue-700/20 text-blue-300 px-4 py-2 rounded-full font-semibold">
                 Computer Network
               </span>
@@ -122,7 +125,7 @@ const About = () => {
                 </p>
               </div>
               <div className="text-center md:text-right">
-                <h2 className="text-3xl md:text-4xl font-bold">1.5+</h2>
+                <h2 className="text-3xl md:text-4xl font-bold">0.3+</h2>
                 <p className="text-gray-400 text-base md:text-lg">
                   Years Experience
                 </p>

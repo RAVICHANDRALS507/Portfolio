@@ -117,7 +117,7 @@ const Contact = () => {
             <div className="space-y-4 hidden sm:block">
               <div className="flex items-center gap-3">
                 <img src={mail_icon} alt="" className="w-8 h-6" />
-                <span>ravichandralsprofessional@gmil.com</span>
+                <span>ravichandralsprofessional@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <img src={call_icon} alt="" className="w-6 h-6" />
