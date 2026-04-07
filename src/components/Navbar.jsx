@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#161212] shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
-      <span className="text-white text-2xl font-bold">Hello!👋</span>
+      <span className="text-white text-2xl font-bold">Hii Their!👋</span>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center gap-10 text-lg font-semibold">

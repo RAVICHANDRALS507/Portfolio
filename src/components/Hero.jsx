@@ -1,5 +1,5 @@
 import React from "react";
-import Picture from "../assets/pic.png";
+import Picture from "../assets/Profileimg.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { TypeAnimation } from "react-type-animation";
 
@@ -11,27 +11,30 @@ const Hero = () => {
     >
       {/* Right Section - Image */}
       <div
-        className="flex justify-center mt-0 md:mt-0 order-1 md:order-2"
+        // --- UPDATED: Increased mt-8 to mt-16 for extra mobile top margin ---
+        className="flex justify-center mt-16 md:mt-0 order-1 md:order-2 md:-ml-8"
         data-aos="fade-right"
       >
-        <img
-          src={Picture}
-          alt="Ravichandra"
-          className="w-full sm:w-5/6 md:w-[450px] h-30 sm:h-56 md:h-auto max-w-xs sm:max-w-sm md:max-w-none rounded-[100px] object-cover shadow-xl transition-all duration-300 md:-ml-16"
-        />
+        {/* Gradient Border Wrapper */}
+        <div className="p-1 md:p-1.5 rounded-full md:rounded-[80px] bg-gradient-to-tr from-yellow-400 via-purple-400 to-pink-500 shadow-[0_0_40px_rgba(168,85,247,0.4)] transition-transform duration-300 hover:scale-105">
+          <img
+            src={Picture}
+            alt="Ravichandra"
+            className="w-56 sm:w-64 md:w-[350px] lg:w-[400px] aspect-square rounded-full md:rounded-[80px] object-cover object-top border-4 border-[#1b1a18]"
+          />
+        </div>
       </div>
 
       {/* Left Section - Text + Buttons */}
       <div
-        className="mt-4 mb-0 flex flex-col items-center md:items-start md:flex-1 order-2 md:order-1 md:ml-28"
+        className="mt-6 mb-0 flex flex-col items-center md:items-start md:flex-1 order-2 md:order-1 md:ml-28"
         data-aos="fade-left"
       >
         <h1 className="text-3xl md:text-5xl font-bold text-white">
           <TypeAnimation
             sequence={[
               "I'm Ravichandra L S,", 500,
-              "",
-              1000,
+              "", 1000,
               "I'm Ravichandra L S,", 500,
             ]}
             wrapper="span"
@@ -40,24 +43,24 @@ const Hero = () => {
             className="bg-gradient-to-r from-yellow-400 via-purple-400 to-pink-500 bg-clip-text text-transparent inline-block"
           />
           <br />
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-300 mb-2">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-300 mb-2 mt-2">
             Full-Stack Developer from India
           </h2>
         </h1>
 
         {/* Mobile view: single line with pipes */}
-        <p className="text-base sm:text-lg md:text-xl text-gray-400 block md:hidden">
+        <p className="text-base sm:text-lg md:text-xl text-gray-400 block md:hidden mt-2">
           Ex Intern @ Nexinbe | HacktoberFest 2024 | Presidency University Bangalore MCA 2025
         </p>
 
         {/* Desktop view: stacked vertically */}
-        <div className="text-base sm:text-lg md:text-xl text-gray-400 mb-2 hidden md:flex md:flex-col md:items-start md:space-y-1">
+        <div className="text-base sm:text-lg md:text-xl text-gray-400 mb-4 mt-4 hidden md:flex md:flex-col md:items-start md:space-y-2">
           <span>Ex Intern @ Nexinbe</span>
           <span>HacktoberFest 2024</span>
           <span>Presidency University Bangalore MCA 2025</span>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-4 w-full md:w-auto mt-4 mb-0">
+        <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-4 w-full md:w-auto mt-6 mb-0">
           <AnchorLink
             className="px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-yellow-400 to-purple-500 hover:scale-105 transition w-full md:w-auto text-center"
             offset={50}

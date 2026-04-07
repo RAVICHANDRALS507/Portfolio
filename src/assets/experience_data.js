@@ -1,10 +1,10 @@
 const Experience_Data = [
     {
         p_no: "01",
-        p_name: "Event-Management-System",
-        p_desc: "A event management system that helps to manage events...",
-        p_link: "https://github.com/RAVICHANDRALS507/hashtag-application",
-        date: "present"
+        p_name: "Ekaksha-Eventers",
+        p_desc: "A event management Company that helps to view the company events done so far...",
+        p_link: "https://github.com/RAVICHANDRALS507/Ekaksha-Eventers",
+        date: "September 2025"
     },
     {
         p_no: "02",

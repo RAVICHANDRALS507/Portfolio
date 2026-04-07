@@ -21,7 +21,8 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
+      {/* --- THE FIX: Added overflow-x-hidden to the parent div above --- */}
       <Navbar />
       <Hero />
       
@@ -34,7 +35,10 @@ const App = () => {
       <Certification />
       <Contact />
       <Footer />
-      <BotpressChatbot />
+      
+      <div className="fixed bottom-6 right-6 z-50">
+        <BotpressChatbot />
+      </div>
     </div>
   );
 };

@@ -19,4 +19,5 @@ body{
 
 body {
   @apply bg-dark text-white font-outfit h-screen;
+  overflow-x: hidden;
 }
