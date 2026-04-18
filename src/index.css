@@ -1,21 +1,8 @@
-/* *{
-  margin: 0;
-  padding: 0;
-}
-
-body{
-  height: 100vh;
-  background: #161513;
-  color: white;
-  font-family: 'outfit';
-} */
+@import "@fontsource/outfit";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Optional: If using @fontsource instead of <link> */
-@import "@fontsource/outfit";
 
 body {
   @apply bg-dark text-white font-outfit h-screen;

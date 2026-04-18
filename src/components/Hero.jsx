@@ -44,20 +44,20 @@ const Hero = () => {
           />
           <br />
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-300 mb-2 mt-2">
-            Full-Stack Developer from India
+            Full-Stack Developer
           </h2>
         </h1>
 
         {/* Mobile view: single line with pipes */}
         <p className="text-base sm:text-lg md:text-xl text-gray-400 block md:hidden mt-2">
-          Ex Intern @ Nexinbe | HacktoberFest 2024 | Presidency University Bangalore MCA 2025
+          Data Annotator | Ex Intern @ Nexinbe | HacktoberFest 2024 | Presidency University Bangalore (MCA 2025)
         </p>
 
         {/* Desktop view: stacked vertically */}
         <div className="text-base sm:text-lg md:text-xl text-gray-400 mb-4 mt-4 hidden md:flex md:flex-col md:items-start md:space-y-2">
-          <span>Ex Intern @ Nexinbe</span>
+          <span> Data Annotator | Ex Intern @ Nexinbe</span>
           <span>HacktoberFest 2024</span>
-          <span>Presidency University Bangalore MCA 2025</span>
+          <span>Presidency University Bangalore (MCA 2025)</span>
         </div>
 
         <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-4 w-full md:w-auto mt-6 mb-0">
